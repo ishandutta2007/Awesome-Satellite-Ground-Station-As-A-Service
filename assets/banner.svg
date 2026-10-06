@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#121829"/>
+      <stop offset="100%" stop-color="#1a103c"/>
+    </linearGradient>
+    
+    <linearGradient id="orbitGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="orbitGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0844" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffb199" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Signal Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Text Glow -->
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComponentTransfer in="blur" result="glow1">
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="glow1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Animations for Dynamic Aspect */
+    @keyframes pulseWave {
+      0% { r: 10px; opacity: 0.9; stroke-width: 2px; }
+      50% { opacity: 0.5; }
+      100% { r: 120px; opacity: 0; stroke-width: 0.5px; }
+    }
+    @keyframes orbitRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes satelliteMove {
+      0% { transform: translate(0px, 0px); }
+      50% { transform: translate(15px, -10px); }
+      100% { transform: translate(0px, 0px); }
+    }
+    @keyframes signalBeam {
+      0%, 100% { opacity: 0.3; stroke-dashoffset: 0; }
+      50% { opacity: 0.9; stroke-dashoffset: -20; }
+    }
+    @keyframes starBlink {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.9; }
+    }
+
+    .wave1 { animation: pulseWave 4s infinite linear; transform-origin: 1020px 250px; }
+    .wave2 { animation: pulseWave 4s infinite linear; animation-delay: 1.3s; transform-origin: 1020px 250px; }
+    .wave3 { animation: pulseWave 4s infinite linear; animation-delay: 2.6s; transform-origin: 1020px 250px; }
+    
+    .sat-float { animation: satelliteMove 6s ease-in-out infinite; }
+    .beam { stroke-dasharray: 6 6; animation: signalBeam 3s linear infinite; }
+    .star { animation: starBlink 3s ease-in-out infinite; }
+    .star-fast { animation: starBlink 1.5s ease-in-out infinite; }
+  </style>
+
+  <!-- Dark Cosmic Background -->
+  <rect width="1200" height="320" fill="url(#bgGradient)" rx="12" />
+
+  <!-- Starfield background elements -->
+  <g fill="#ffffff">
+    <circle cx="100" cy="50" r="1" class="star" />
+    <circle cx="250" cy="90" r="1.5" class="star-fast" />
+    <circle cx="450" cy="40" r="1" class="star" />
+    <circle cx="650" cy="70" r="1.2" class="star-fast" />
+    <circle cx="850" cy="30" r="1" class="star" />
+    <circle cx="1050" cy="80" r="1.5" class="star" />
+    <circle cx="150" cy="220" r="1" class="star-fast" />
+    <circle cx="350" cy="280" r="1.2" class="star" />
+    <circle cx="750" cy="260" r="1" class="star" />
+    <circle cx="920" cy="290" r="1.5" class="star-fast" />
+  </g>
+
+  <!-- Orbital Rings / Tech Grid Background (Low Opacity, Behind Text) -->
+  <g opacity="0.25">
+    <ellipse cx="1020" cy="250" rx="450" ry="140" fill="none" stroke="url(#orbitGrad1)" stroke-width="1.5" transform="rotate(-15 1020 250)" />
+    <ellipse cx="1020" cy="250" rx="320" ry="90" fill="none" stroke="url(#orbitGrad2)" stroke-width="1" transform="rotate(20 1020 250)" />
+    <line x1="0" y1="290" x2="1200" y2="290" stroke="#00f2fe" stroke-width="0.5" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Dynamic Animated Signal Waves emitting from Ground Station -->
+  <g fill="none" stroke="#00f2fe">
+    <circle cx="1020" cy="230" r="10" class="wave1" />
+    <circle cx="1020" cy="230" r="10" class="wave2" />
+    <circle cx="1020" cy="230" r="10" class="wave3" />
+  </g>
+
+  <!-- Ground Station Antenna Illustration (Right side) -->
+  <g transform="translate(970, 180)">
+    <!-- Base / Tower -->
+    <path d="M30 70 L40 40 L60 40 L70 70 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+    <line x1="50" y1="40" x2="50" y2="70" stroke="#38bdf8" stroke-width="1" />
+    <line x1="37" y1="55" x2="63" y2="55" stroke="#38bdf8" stroke-width="1" />
+    <!-- Dish Reflector -->
+    <path d="M15 25 Q 50 45 85 25 Q 50 10 15 25 Z" fill="#0f172a" stroke="#00f2fe" stroke-width="2.5" filter="url(#glow)" />
+    <!-- Dish Feed Horn -->
+    <line x1="50" y1="28" x2="50" y2="8" stroke="#00f2fe" stroke-width="2" />
+    <circle cx="50" cy="7" r="4" fill="#ff0844" filter="url(#glow)" />
+  </g>
+
+  <!-- Satellite Illustration (Top Right) -->
+  <g class="sat-float" transform="translate(1040, 40)">
+    <!-- Solar Panels -->
+    <rect x="-35" y="-6" width="25" height="12" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+    <rect x="10" y="-6" width="25" height="12" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+    <!-- Satellite Body -->
+    <rect x="-10" y="-8" width="20" height="16" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1" rx="2" />
+    <circle cx="0" cy="0" r="3" fill="#ff0844" />
+  </g>
+
+  <!-- Telemetry / Signal Beam connecting Satellite and Dish -->
+  <line x1="1040" y1="50" x2="1020" y2="187" stroke="#00f2fe" stroke-width="2" class="beam" filter="url(#glow)" />
+
+  <!-- Foreground Title and Subtitle (Ensured high contrast and non-overlapping readability) -->
+  <g transform="translate(60, 0)">
+    <!-- Category Pill / Badge -->
+    <g transform="translate(0, 50)">
+      <rect x="0" y="0" width="260" height="28" rx="14" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" />
+      <text x="130" y="18" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">SATELLITE GROUND SEGMENT</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="128" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="40" font-weight="900" letter-spacing="-0.5" filter="url(#textGlow)">
+      Awesome Satellite Ground Station
+    </text>
+    <text x="0" y="172" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.5">
+      as a Service (GSaaS) 🛰️📡
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="218" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400">
+      Curated ecosystem of SaaS Ground Segment platforms, open-source telemetry networks,
+    </text>
+    <text x="0" y="242" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400">
+      mission control frameworks, SDR pipelines, and satellite tracking tools.
+    </text>
+
+    <!-- Feature Tags -->
+    <g transform="translate(0, 268)">
+      <text x="0" y="0" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">
+        ⚡ AWS Ground Station &bull; Azure Orbital &bull; SatNOGS &bull; Yamcs &bull; TinyGS &bull; GNU Radio &bull; SatDump
+      </text>
+    </g>
+  </g>
+</svg>

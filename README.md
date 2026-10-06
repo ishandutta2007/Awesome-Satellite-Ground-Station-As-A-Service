@@ -65,7 +65,7 @@ The global Ground Station as a Service (GSaaS) market size is estimated at **~$8
 
 ## 🔓 Open-Source GitHub Projects
 
-Below is a comprehensive list of open-source satellite ground station software, mission control systems, software-defined radio (SDR) signal decoders, and orbit tracking projects. **Sorted by GitHub Stars_Counts (descending).**
+Below is a comprehensive list of open-source satellite ground station software, mission control systems, software-defined radio (SDR) signal decoders, and orbit tracking projects. **Sorted by GitHub_Stars_Counts (descending).**
 
 ---
 
@@ -210,3 +210,12 @@ Thank you for building open, sovereign, and accessible satellite communications!
 <p align="center">
   <b>Made for satellite operators, CubeSat teams, radio amateurs, and space tech innovators worldwide. 🌌📡</b>
 </p>
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Satellite-Ground-Station-As-A-Service&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Satellite-Ground-Station-As-A-Service_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Satellite-Ground-Station-As-A-Service_growth.svg">
+  </picture>
+</a>

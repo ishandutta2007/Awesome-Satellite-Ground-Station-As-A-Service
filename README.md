@@ -44,63 +44,20 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-- **[AWS Ground Station](https://aws.amazon.com/ground-station/)**  
+The global Ground Station as a Service (GSaaS) market size is estimated at **~$800 Million to $1 Billion** (with the broader satellite ground station segment reaching over **$38 Billion**), growing at a **CAGR of ~12.5%**. The sector is **highly fragmented**, with leading cloud giants (AWS, Azure) holding around 10–12% market share each while over 75% of the market is served by diverse commercial, regional, and defense space operations providers.
 
-  **AWS's managed ground station service** — access satellite data without building your own ground station infrastructure . **Pay-as-you-go pricing** with global coverage . **Best for AWS-native satellite operations** .
-
-
-
-- **[Azure Orbital](https://azure.microsoft.com/en-us/products/orbital/)**  
-
-  **Microsoft's ground station service** — satellite communication and data processing on Azure . **Best for Azure-centric satellite operations** .
-
-
-
-- **[KSATlite](https://www.ksat.no/)**  
-
-  **KSAT's ground station service** — global network with simplified access for small satellite operators . **Best for smallsat missions** .
-
-
-
-- **[RBC Signals](https://www.rbcsignals.com/)**  
-
-  **Global ground station network** — flexible access with multiple antenna sites . **Best for diverse mission requirements** .
-
-
-
-- **[Infostellar StellarStation](https://www.infostellar.net/)**  
-
-  **Ground station sharing platform** — virtualized ground segment with global network . **Best for shared infrastructure** .
-
-
-
-- **[Leaf Space](https://leafspace.com/)**  
-
-  **Ground station as a service** — global network with responsive scheduling . **Best for small satellite operators** .
-
-
-
-- **[Atlas Space Operations](https://atlasspace.com/)**  
-
-  **Ground station network and software** — global coverage with cloud-based operations . **Best for enterprise satellite operations** .
-
-
-
-- **[Viasat Real-Time Earth](https://www.viasat.com/)**  
-
-  **Ground station service** — global network with real-time data delivery . **Best for Earth observation missions** .
-
-
-
-- **[Planet Labs Ground Network](https://www.planet.com/)**  
-
-  **Planet's ground station network** — part of their satellite data platform . **Best for Planet ecosystem users** .
-
-
-
-- **[SES Space & Defense](https://www.ses.com/)**  
-
-  **Government and defense satellite communications** — secure ground segment services . **Best for defense and government missions** .
+| Platform | Description | Pricing (Starting / On-Demand) | Free Tier / Trial Limit | Company Size / Valuation / Revenue |
+| :--- | :--- | :--- | :--- | :--- |
+| **[AWS Ground Station](https://aws.amazon.com/ground-station/)** | AWS's managed ground station service for satellite communications. Best for AWS-native satellite operations. | **~$10.00 / min** (Narrowband On-Demand ≤40MHz); reserved discounts available | **No Free Tier** (Eligible for $300 AWS Free Tier general cloud promotional credits) | **~$2.7 Trillion** Market Cap (Parent: Amazon.com Inc; AWS annual revenue run-rate ~$169B) |
+| **[Azure Orbital](https://azure.microsoft.com/en-us/products/orbital/)** | Microsoft's ground station service for satellite communication & processing on Azure. | **~$10.00 / min** (Contact time pay-as-you-go) | **No Free Tier** ($200 Azure free credit for first 30 days for new accounts) | **~$2.5 Trillion** Market Cap (Parent: Microsoft Corp) |
+| **[Viasat Real-Time Earth](https://www.viasat.com/)** | Global ground station service with real-time data delivery for Earth observation. | **~$15.00 – $22.00 / min** (Pass-based contract dependent) | **No Free Tier / No Free Trial** (Direct commercial contract required) | **~$9.5 Billion** Market Cap / ~$4.6 Billion annual revenue (NASDAQ: VSAT) |
+| **[Planet Labs Ground Network](https://www.planet.com/)** | Planet's proprietary global ground network part of their satellite data platform. | **~$3,000 / month** (Platform subscription starting tier) | **14-day free trial** (Limited to sample Earth Observation data API access) | **~$6.0 Billion** Market Cap / ~$308 Million annual revenue (NYSE: PL) |
+| **[SES Space & Defense](https://www.ses.com/)** | Secure ground segment services for defense and government satellite communications. | **~$500 / hour** (~$8.33/min base transponder/ground service estimate) | **No Free Tier / No Free Trial** (Government/defense procurement only) | **~$1.8 Billion** Market Cap (Parent: SES S.A. / ~$3.5B annual revenue) |
+| **[KSATlite](https://www.ksat.no/)** | Global ground network with simplified access for small satellite & CubeSat operators. | **~$12.00 – $18.00 / min** (SmallSat pass rate structure) | **No Free Tier / No Free Trial** (Commercial pass-based contract) | **~$1.0 Billion** estimated valuation (~$100M+ annual revenue JV of Kongsberg & Space Norway) |
+| **[Atlas Space Operations](https://atlasspace.com/)** | Cloud-based global ground station network software and operations for enterprise. | **~$15.00 / min** (On-demand pass pricing baseline) | **No Free Tier / No Free Trial** (Enterprise contract required) | **~$150 Million – $250 Million** Valuation (Acquired by York Space Systems / AE Industrial) |
+| **[Infostellar StellarStation](https://www.infostellar.net/)** | Virtualized ground station sharing platform for global network capacity. | **~$10.00 – $15.00 / min** (Shared station network pass rate) | **No Free Tier** (Demo / sandbox environment available on request) | **~$80 Million – $120 Million** Valuation (Acquired by Mitsubishi Electric Corp; $21M+ raised) |
+| **[Leaf Space](https://leafspace.com/)** | Dedicated GSaaS global network with responsive scheduling for small satellites. | **~$9.00 – $14.00 / min** (Pass volume dependent) | **No Free Tier / No Free Trial** (Commercial commitment required) | **~$50 Million – $100 Million** Valuation (€35M+ funding raised) |
+| **[RBC Signals](https://www.rbcsignals.com/)** | Flexible access global ground station network with custom antenna configurations. | **~$12.00 – $20.00 / min** (Network pass rate baseline) | **No Free Tier / No Free Trial** (Custom commercial agreement) | **~$15 Million – $30 Million** Valuation ($3.2M+ seed funding raised) |
 
 
 

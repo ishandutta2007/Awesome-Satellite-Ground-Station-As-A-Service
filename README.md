@@ -58,7 +58,7 @@ The global Ground Station as a Service (GSaaS) market size is estimated at **~$8
 | **[KSATlite](https://www.ksat.no/)** 🛰️ | Global ground network with simplified access for small satellite & CubeSat operators. | **~$12.00 – $18.00 / min** (SmallSat pass rate structure) | **No Free Tier / No Free Trial** (Commercial pass-based contract) | **~$1.0 Billion** estimated valuation (~$100M+ annual revenue JV of Kongsberg & Space Norway) |
 | **[Atlas Space Operations](https://atlasspace.com/)** 📡 | Cloud-based global ground station network software and operations for enterprise. | **~$15.00 / min** (On-demand pass pricing baseline) | **No Free Tier / No Free Trial** (Enterprise contract required) | **~$150 Million – $250 Million** Valuation (Acquired by York Space Systems / AE Industrial) |
 | **[Infostellar StellarStation](https://www.infostellar.net/)** ⚡ | Virtualized ground station sharing platform for global network capacity. | **~$10.00 – $15.00 / min** (Shared station network pass rate) | **No Free Tier** (Demo / sandbox environment available on request) | **~$80 Million – $120 Million** Valuation (Acquired by Mitsubishi Electric Corp; $21M+ raised) |
-| **[Leaf Space](https://leafspace.com/)** 🌿 | Dedicated GSaaS global network with responsive scheduling for small satellites. | **~$9.00 – $14.00 / min** (Pass volume dependent) | **No Free Tier / No Free Trial** (Commercial commitment required) | **~$50 Million – $100 Million** Valuation (€35M+ funding raised) |
+| **[Leaf Space](https://leaf.space/)** 🌿 | Dedicated GSaaS global network with responsive scheduling for small satellites. | **~$9.00 – $14.00 / min** (Pass volume dependent) | **No Free Tier / No Free Trial** (Commercial commitment required) | **~$50 Million – $100 Million** Valuation (€35M+ funding raised) |
 | **[RBC Signals](https://www.rbcsignals.com/)** 📶 | Flexible access global ground station network with custom antenna configurations. | **~$12.00 – $20.00 / min** (Network pass rate baseline) | **No Free Tier / No Free Trial** (Custom commercial agreement) | **~$15 Million – $30 Million** Valuation ($3.2M+ seed funding raised) |
 
 ---
@@ -103,16 +103,11 @@ Below is a comprehensive list of open-source satellite ground station software, 
   **University-Class Open Ground Station network**, GPL-3.0 licensed.  
   *Designed specifically for university CubeSat programs. Integrates SatNOGS network principles with Yamcs mission control and Cesium 3D visualizers.*
 
-- **[r2cloud](https://github.com/derinas/r2cloud)** [![Stars](https://img.shields.io/github/stars/derinas/r2cloud?style=social&color=white)](https://github.com/derinas/r2cloud/stargazers) ☁️  
-  **Fully automated Raspberry Pi satellite ground station**, Apache-2.0 licensed.  
-  *Autonomously schedules pass observations, tunes SDR receiver, decodes weather satellite telemetry (NOAA/Meteor), and uploads data.*
 
 - **[OpenSatelliteProject](https://github.com/OpenSatelliteProject)** [![Stars](https://img.shields.io/github/stars/OpenSatelliteProject/osp-decoder?style=social&color=white)](https://github.com/OpenSatelliteProject/osp-decoder/stargazers) 🌍  
   **Open-source geostationary satellite data reception stack**, MIT licensed.  
   *Software suite for receiving, demodulating, and displaying real-time weather imagery from GOES-R, Himawari, and Elektro-L satellites.*
 
-- **[Svarog](https://github.com/svarog-project)** [![Stars](https://img.shields.io/badge/OpenSource-Svarog-white?style=social)](https://github.com/svarog-project) ⚡  
-  **Distributed open-source satellite ground station network for VHF/UHF band reception.**
 
 ---
 
